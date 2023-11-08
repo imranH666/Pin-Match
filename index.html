@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Matacher</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="pin-main">
+            <div class="pin-items">
+                <input type="text" name="" id="genaret-display" class="">
+                <p></p>
+                <button class="genaret-btn">Generate <br> Pin</button>
+            </div>
+            <div class="pin-items">
+                <input type="text" name="" id="number-display">
+                <div class="btn-box">
+                    <h5 class="seven" onclick="addToScreen('7')">7</h5>
+                    <h5 onclick="addToScreen('8')">8</h5>
+                    <h5 onclick="addToScreen('9')">9</h5>
+                    <h5 onclick="addToScreen('4')">4</h5>
+                    <h5 onclick="addToScreen('5')">5</h5>
+                    <h5 onclick="addToScreen('6')">6</h5>
+                    <h5 onclick="addToScreen('1')">1</h5>
+                    <h5 onclick="addToScreen('2')">2</h5>
+                    <h5 onclick="addToScreen('3')">3</h5>
+                    <h5 onclick="backspace()"> ⌫ </h5>
+                    <h5 onclick="addToScreen('0')">0</h5>
+                    <h5 onclick="restScreen()">C</h5>
+                </div>
+                <button type="submit" class="submit">Submit</button>
+                <p class="alart"><span class="alart-count">0</span> try left</p>
+            </div>
+        </div>
+        <h4 class="text-center text-white for-error"><i class="fa-solid fa-xmark"></i> Pin Didn't Match Please try again</h4>
+        <h4 class="text-center text-white for-correct"><i class="fa-solid fa-square-check"></i> Pin Matched.... Secret door is opennig for you</h4>
+        <h4 class="text-center text-white genaret-box-empty">Please Input the numburs</h4>
+    </div>
+    
+
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
